@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { mediaGallery } from "@/data/media";
+import { withBasePath } from "@/lib/paths";
 
 export function MediaGallery() {
   return (
@@ -28,7 +29,7 @@ export function MediaGallery() {
                   className="object-cover transition duration-500 group-hover:scale-[1.03]"
                   fill
                   sizes={index === 0 || index === 3 ? "(min-width: 768px) 50vw, 100vw" : "(min-width: 768px) 33vw, 100vw"}
-                  src={item.src}
+                  src={withBasePath(item.src)}
                 />
               </div>
               <figcaption className="absolute bottom-3 left-3 rounded-full bg-black/60 px-3 py-1 text-sm font-bold backdrop-blur">

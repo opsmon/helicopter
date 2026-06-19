@@ -5,6 +5,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { fleet } from "@/data/fleet";
 import { trackEvent } from "@/lib/analytics";
+import { withBasePath } from "@/lib/paths";
 
 export function FleetCards({ compact = false }: { compact?: boolean }) {
   return (
@@ -17,7 +18,7 @@ export function FleetCards({ compact = false }: { compact?: boolean }) {
               className="object-cover"
               fill
               sizes="(min-width: 768px) 33vw, 100vw"
-              src={aircraft.image}
+              src={withBasePath(aircraft.image)}
             />
           </div>
           <div className="grid gap-4 p-5">

@@ -3,6 +3,7 @@ import Image from "next/image";
 import { Phone, Send } from "lucide-react";
 import { contacts } from "@/data/contacts";
 import { heroFrames } from "@/data/media";
+import { withBasePath } from "@/lib/paths";
 
 export function Hero() {
   return (
@@ -17,7 +18,7 @@ export function Hero() {
             key={frame.src}
             priority={index === 0}
             sizes="100vw"
-            src={frame.src}
+            src={withBasePath(frame.src)}
           />
         ))}
       </div>
@@ -59,7 +60,7 @@ export function Hero() {
                 className="object-cover"
                 fill
                 sizes="20vw"
-                src={frame.src}
+                src={withBasePath(frame.src)}
               />
               <span className="absolute bottom-2 left-2 rounded-full bg-black/55 px-2 py-1 text-xs font-bold text-white backdrop-blur">
                 {String(index + 1).padStart(2, "0")} · {frame.label}

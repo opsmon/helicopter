@@ -55,7 +55,7 @@ export function ServiceCard({ service, wide = false }: { service: ServiceItem; w
           className="object-cover"
           fill
           sizes={wide ? "(min-width: 768px) 50vw, 100vw" : "(min-width: 768px) 33vw, 100vw"}
-          src={service.image}
+          src={withBasePath(service.image)}
         />
       </div>
       <div className="grid gap-4 p-5">
