@@ -98,6 +98,60 @@ textarea {
   gap: 18px;
 }
 
+.hero-video {
+  isolation: isolate;
+}
+
+.hero-frame {
+  opacity: 0;
+  transform: scale(1.05);
+  animation: hero-reel 30s infinite;
+}
+
+.hero-frame-1 {
+  animation-delay: 0s;
+}
+
+.hero-frame-2 {
+  animation-delay: 6s;
+}
+
+.hero-frame-3 {
+  animation-delay: 12s;
+}
+
+.hero-frame-4 {
+  animation-delay: 18s;
+}
+
+.hero-frame-5 {
+  animation-delay: 24s;
+}
+
+@keyframes hero-reel {
+  0% {
+    opacity: 0;
+    transform: scale(1.08) translateX(0);
+  }
+
+  5% {
+    opacity: 1;
+  }
+
+  20% {
+    opacity: 1;
+  }
+
+  28% {
+    opacity: 0;
+    transform: scale(1.02) translateX(-1.5%);
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
 .button {
   min-height: 44px;
   display: inline-flex;
@@ -222,6 +276,16 @@ textarea {
 }
 
 @media (prefers-reduced-motion: reduce) {
+  .hero-frame {
+    animation: none !important;
+    opacity: 0;
+    transform: none;
+  }
+
+  .hero-frame-1 {
+    opacity: 1;
+  }
+
   *,
   *::before,
   *::after {

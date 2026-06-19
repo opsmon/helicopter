@@ -19,7 +19,7 @@ export const services: ServiceItem[] = [
     id: "passenger",
     title: "Пассажирские перевозки",
     href: "/services/helicopter-rental/",
-    image: "/images/hero/helicopter-main.png",
+    image: "/images/hero/helicopter-takeoff.png",
     summary:
       "Перевозка людей в точки, где обычная логистика занимает слишком много времени.",
     scenarios: ["Событийный полет", "Рабочая поездка", "Доставка специалистов"],
@@ -72,7 +72,7 @@ export const services: ServiceItem[] = [
     id: "helicopter-base",
     title: "Базирование вертолетов",
     href: "/services/helicopter-base/",
-    image: "/images/services/maintenance-hangar.png",
+    image: "/images/gallery/hangar-dusk.png",
     summary:
       "Стоянка, ангарное хранение, охрана, инфраструктура и сопутствующее обслуживание.",
     scenarios: ["Стоянка", "Ангар", "Техническая поддержка"],
@@ -85,7 +85,7 @@ export const services: ServiceItem[] = [
     id: "aerial-filming",
     title: "Воздушная съемка",
     href: "/services/aviation-operations/",
-    image: "/images/hero/helicopter-main.png",
+    image: "/images/gallery/infrastructure-monitoring.png",
     summary:
       "Облеты территорий, съемка объектов и сопровождение медиа- или инженерных задач.",
     scenarios: ["Фото/видео", "Облет объекта", "Картографирование"],
@@ -98,7 +98,7 @@ export const services: ServiceItem[] = [
     id: "special",
     title: "Специальные задачи",
     href: "/request/",
-    image: "/images/services/cargo-flight.png",
+    image: "/images/gallery/coastal-flight.png",
     summary:
       "Нестандартные задачи разбираются с менеджером, пилотами и техническими специалистами.",
     scenarios: ["Санавиация", "Поиск и спасение", "Монтаж"],

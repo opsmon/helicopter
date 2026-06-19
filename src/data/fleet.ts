@@ -17,7 +17,7 @@ export const fleet: Aircraft[] = [
   {
     id: "light-demo",
     name: "Легкий вертолет",
-    image: "/images/hero/helicopter-main.png",
+    image: "/images/gallery/coastal-flight.png",
     description:
       "Демонстрационный вариант для индивидуальных маршрутов, облетов и съемки.",
     passengers: 4,
@@ -30,7 +30,7 @@ export const fleet: Aircraft[] = [
   {
     id: "maintenance-demo",
     name: "Воздушное судно на обслуживании",
-    image: "/images/services/maintenance-hangar.png",
+    image: "/images/gallery/hangar-dusk.png",
     description:
       "Карточка показывает формат будущего каталога флота и технических возможностей.",
     payload: "по документации",

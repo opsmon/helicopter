@@ -4,6 +4,7 @@ import { Accordion } from "@/components/ui/Accordion";
 import { FavoritesComparePanel } from "@/components/services/FavoritesComparePanel";
 import { FleetCards } from "@/components/fleet/FleetCards";
 import { Hero } from "@/components/sections/Hero";
+import { MediaGallery } from "@/components/sections/MediaGallery";
 import { ProcessSteps } from "@/components/sections/ProcessSteps";
 import { QuickRequestForm } from "@/components/forms/QuickRequestForm";
 import { RecentViews } from "@/components/services/RecentViews";
@@ -29,6 +30,7 @@ export default function HomePage() {
       </section>
       <FavoritesComparePanel />
       <RecentViews />
+      <MediaGallery />
       <section className="section">
         <div className="container">
           <div className="mb-8 flex flex-col justify-between gap-4 md:flex-row md:items-end">
